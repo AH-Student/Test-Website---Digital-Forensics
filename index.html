@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Store</title>
+
+  <!-- Paste your GA4 Google tag here -->
+
+  <!-- Paste your Microsoft Clarity tracking code here -->
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Test Store</h1>
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <button id="cartButton">Cart (<span id="cartCount">0</span>)</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Simple online store</h2>
+      <p>A basic demonstration website for web analytics testing.</p>
+      <a href="#products">View products</a>
+    </section>
+
+    <section id="products">
+      <h2>Products</h2>
+
+      <div class="products">
+        <article class="product">
+          <h3>Product 1</h3>
+          <p>Basic product description.</p>
+          <p><strong>$20.00</strong></p>
+          <button class="details" data-id="1">View details</button>
+          <button class="add" data-id="1">Add to cart</button>
+        </article>
+
+        <article class="product">
+          <h3>Product 2</h3>
+          <p>Basic product description.</p>
+          <p><strong>$30.00</strong></p>
+          <button class="details" data-id="2">View details</button>
+          <button class="add" data-id="2">Add to cart</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>This fictional store is used to demonstrate Google Analytics 4 and Microsoft Clarity.</p>
+    </section>
+  </main>
+
+  <aside id="cart">
+    <button id="closeCart">Close</button>
+    <h2>Cart</h2>
+    <div id="cartItems">Your cart is empty.</div>
+    <p>Total: $<span id="total">0.00</span></p>
+    <button id="checkout">Proceed to checkout</button>
+  </aside>
+
+  <footer>
+    <p>Test Store &copy; 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
